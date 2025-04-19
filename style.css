@@ -13,6 +13,77 @@
   padding: 0;
 }
 
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #000;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+/* Estilos para el reproductor de audio */
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 1000;
+  width: 300px; /* Ajusta el tamaño del reproductor si es necesario */
+}
+
+/* Media Query para pantallas de escritorio y tabletas */
+@media (max-width: 768px) {
+  audio {
+    width: 200px; /* Reproductor más pequeño en móviles */
+  }
+
+  .app {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media (max-width: 480px) {
+  audio {
+    width: 180px; /* Reproductor aún más pequeño en pantallas pequeñas */
+  }
+
+  .app {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 24px; /* Ajuste de tamaño de fuente para el título */
+  }
+
+  h4 {
+    font-size: 18px; /* Ajuste de tamaño de fuente para subtítulos */
+  }
+
+  p {
+    font-size: 14px; /* Texto más pequeño en pantallas pequeñas */
+  }
+
+  .info {
+    font-size: 14px;
+  }
+}
 
 
 body {
