@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>♥ AMOR ♥</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Estilos para posicionar el reproductor en la parte inferior izquierda */
+    audio {
+      position: fixed;
+      left: 10px; /* 10px desde el borde izquierdo */
+      bottom: 10px; /* 10px desde el borde inferior */
+      z-index: 1000; /* Asegura que el reproductor esté por encima de otros elementos */
+      width: 300px; /* Ajusta el tamaño del reproductor si es necesario */
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+  <!-- Música de fondo con controles -->
+  <audio controls autoplay loop>
+    <source src="audiomusic.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <div class="app">
+    <!-- Tu contenido aquí -->
+  </div>
+
+  <div class="loading__wrapper">
+    <div class="loader--text">Loading...</div>
+    <div class="loader">
+      <span></span>
+    </div>
+  </div>
+
+  <div class="cardList">
+    <button class="cardList__btn btn btn--left">
+      <div class="icon">
+        <svg>
+          <use xlink:href="#arrow-left"></use>
+        </svg>
+      </div>
+    </button>
+
+    <div class="cards__wrapper">
+      <div class="card current--card">
+        <div class="card__image">
+          <img src="Imagen01.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="card next--card">
+        <div class="card__image">
+          <img src="Imagen02.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="card previous--card">
+        <div class="card__image">
+          <img src="Imagen03.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <button class="cardList__btn btn btn--right">
+      <div class="icon">
+        <svg>
+          <use xlink:href="#arrow-right"></use>
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <div class="infoList">
+    <div class="info__wrapper">
+      <div class="info current--info" style="position: absolute; top: 60%; left: 30%; transform: translate(-50%, -50%); text-align: center; background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 15px; width: 80%; max-width: 600px;">
+        <h1 style="color: #FFD700; font-size: 36px; margin-bottom: 10px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">♥Rosario♥</h1>
+        <h4 style="color: #FFFFFF; font-size: 24px; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">Lo eres todo para</h4>
+        <p style="color: #FFFAF0; font-size: 18px; font-style: italic; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);">
+            "Eres luz que ilumina mis dias,<br>
+            eres amor expresado en tu sonrisa,<br>
+            en cada beso tuyo encuentro la razon del universo,<br>
+            y a tu lado, amor mío, a tu lado soy feliz."<br><br>
+            <span style="color: #FFD700;">Siempre a tu lado</span>
+        </p>
+    </div>
+    
+    <div class="info next--info" style="position: absolute; top: 60%; left: 30%; transform: translate(-50%, -50%); text-align: center; background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 15px; width: 80%; max-width: 600px;">
+        <h1 style="color: #FFD700; font-size: 36px; margin-bottom: 10px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">♥Mi compañera♥</h1>
+        <h4 style="color: #FFFFFF; font-size: 24px; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">Mi compañera de vida</h4>
+        <p style="color: #FFFAF0; font-size: 18px; font-style: italic; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);">
+            "Cuando estoy contigo, encuentro el porque de las cosas,<br>
+            el tiempo se alarga y a la vez se detiene.<br>
+            pues mi sonrisa es por cada detalle de tu mirar,<br>
+            y sentirme en tus brazos es por lo siempre quiero luchar."<br><br>
+            <span style="color: #FFD700;">Gracias por ser mi compañera</span>
+        </p>
+    </div>
+    
+    <div class="info previous--info" style="position: absolute; top: 60%; left: 30%; transform: translate(-50%, -50%); text-align: center; background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 15px; width: 80%; max-width: 600px;">
+        <h1 style="color: #FFD700; font-size: 36px; margin-bottom: 10px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">♥Te estoy amando♥</h1>
+        <h4 style="color: #FFFFFF; font-size: 24px; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">Siempre seremos uno</h4>
+        <p style="color: #FFFAF0; font-size: 18px; font-style: italic; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);">
+            "Te estoy amando, y en cada melodía de mi corazón,<br>
+            cada latido mío susurra tu nombre al viento.<br>
+            Te estoy amando en cada segundo, incluso en tu recuerdo,<br>
+            porque en cada rincón de mi ser, siempre tendrás un lugar especial."<br><br>
+            <span style="color: #FFD700;">Te estoy amando Rosario</span>
+        </p>
+    </div>
+    
+    
+    
+    </div>
+  </div>
+
+
+  <div class="app__bg">
+    <div class="app__bg__image current--image">
+      <img src="Imagen05.jpg" alt="" />
+    </div>
+    <div class="app__bg__image next--image">
+      <img src="Imagen02.jpg" alt="" />
+    </div>
+    <div class="app__bg__image previous--image">
+      <img src="Imagen04.jpg" alt="" />
+    </div>
+  </div>
+</div>
+
+<div class="loading__wrapper">
+  <div class="loader--text">Loading...</div>
+  <div class="loader">
+    <span></span>
+  </div>
+</div>
+
+
+<svg class="icons" style="display: none;">
+  <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+    <polyline points='328 112 184 256 328 400'
+               style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+  </symbol>
+  <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+    <polyline points='184 112 328 256 184 400'
+               style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+  </symbol>
+</svg>
+
+<!-- <div class="support">
+  <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+  <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a>
+</div> -->
+<!-- partial -->
+<script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
